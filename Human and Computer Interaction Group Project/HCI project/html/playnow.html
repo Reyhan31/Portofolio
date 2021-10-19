@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Now</title>
+    <link rel="stylesheet" href="../css/homePage.css">
+    <link rel="stylesheet" href="../css/playnow.css">
+    <script src="../js/homePage.js"></script>
+    <script src="../js/playnow.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <a class="logo" href="../html/homePage.html">
+                <img src="../assets/images/Logo.png" alt="">
+            </a>
+
+            <div class="hamburger" id="hamburger-btn" onclick="menuButtonClick()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div class="links">
+                <a class="navlink" href="characters.html">Characters</a>
+                <a class="navlink" href="events.html">Events</a>
+                <a class="navlink" href="gameplay.html">Gameplay</a>
+                <a class="navlink" href="playnow.html">Play Now</a>
+            </div>
+
+        </div>
+        <div class="links-mobile hide" id = "menu">
+            <a class="navlinkMenu" href="#">FILLER</a>
+            <a class="navlinkMenu" href="events.html">Events</a>
+            <a class="navlinkMenu" href="gameplay.html">Gameplay</a>
+            <a class="navlinkMenu" href="characters.html">Characters</a>
+            <a class="navlinkMenu" href="playnow.html">Play Now</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>REGISTER</h1>
+        <div class="form">
+            <input type="text" id="name" class="inputText" placeholder="Name">
+            <input type="email" id="email" class="inputText" placeholder="Email">
+            <input type="password" id="password" class="inputText" placeholder="Password">
+            <div class="genderForm">
+                <label for="">Gender : </label>
+                <input type="radio" name="gender" id="male" class="gender">Male
+                <input type="radio" name="gender" id="female" class="gender">Female
+            </div>
+            <div class="checkboxForm">
+                <input type="checkbox" id="checkbox">
+                I Agree with terms & conditions
+            </div>
+            <button id="registerBtn" onclick="validation()">Register</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="leftFooter">
+            <p>All Rights Reserved by Frawlsalla © 2021</p> 
+        </div>
+        <div class="rightFooter">
+            <div class="rightFooterTop"><p>Our Social Media</p></div>
+            <div class="rightFooterBottom">
+                <a href="https://www.instagram.com/"> <img src="../assets/images/instagram.png" alt=""></a>
+                <a href="https://www.youtube.com/"> <img src="../assets/images/youtube-logo-png-46016.png" id="youtubeLogo" alt=""></a>
+                <a href="https://twitter.com/"> <img src="../assets/images/twitter-logo-png-5860.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/homePage.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/homePage.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+
+            <a class="logo" href="../html/homePage.html">
+                <img src="../assets/images/logo.png" alt="">
+            </a>
+
+            <div class="hamburger" id="hamburger-btn" onclick="menuButtonClick()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div class="links">
+                <a class="navlink" href="characters.html">Characters</a>
+                <a class="navlink" href="events.html">Events</a>
+                <a class="navlink" href="gameplay.html">Gameplay</a>
+                <a class="navlink" href="playnow.html">Play Now</a>
+            </div>
+
+        </div>
+        <div class="links-mobile hide" id = "menu">
+            <a class="navlinkMenu" href="#">FILLER</a>
+            <a class="navlinkMenu" href="events.html">Events</a>
+            <a class="navlinkMenu" href="gameplay.html">Gameplay</a>
+            <a class="navlinkMenu" href="characters.html">Characters</a>
+            <a class="navlinkMenu" href="playnow.html">Play Now</a>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <img src="../assets/images/jumbotronLogo.png" alt="">
+        <div class="btnJumbotron">
+            <form action="playnow.html">
+                <button id="playNowBtn">Play Now</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <div class="about">
+        <div class="aboutTop">
+            <div class="aboutTopLeft">
+                <h2 id="titleAbout">Online and Offline Fighting Games</h2>
+                <p>
+                    Frawlsalla is a famous platform based fighting game.
+                    In Frawlsalla you can play with your friends online with internet connection and ofline via lan connection to fighting together.
+                    Frawsalla is a free to play fighting game that support cross platform from pc, console, Xbox, and mobile so you can play whenever you want.
+                </p>
+            </div>
+            <div class="aboutTopRight">
+            </div>
+        </div>
+        <div class="aboutBottom">
+            <div class="aboutBottomLeft">
+            </div>
+            <div class="aboutBottomRight">
+                <h2 id="titleAbout">Many Modes to Choose From</h2>
+                <p>
+                    You can enjoy playing Frawlsalla with various mode of like Casual Fighting 1 vs 1 battle, team battle that you be able to team up with your friends,
+                    Free for All Battles, Local Single Player, Local custom room, Practice room,  and Ranked Match to make you at the top of Ranked Leaderboard. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="event">
+        <h1>Highlight Frawlsalla Event</h1>
+        <div class="slider">
+            <button id= "prevBtn">&#10094;</button>
+            <div class="sliderContent">
+                <img src="../assets/images//events.jpg" alt="" class="active" id="firstImage">
+                <img src="../assets/images//events(2).jpg" alt="" >
+                <img src="../assets/images//events(3).jpg" alt="" >
+                <img src="../assets/images//events(4).jpg" alt="" id="lastImage">
+            </div>
+            <button id= "nextBtn">&#10095;</button>
+        </div>
+    </div>
+    <div class="community">
+        <h1>Our Community</h1>
+        <div class="communityCard">
+           <a href="https://discord.com/"><img src="../assets/images/discord.png" alt=""></a>
+           <a href="https://www.facebook.com/"><img src="../assets/images/facebook-logo-png-6381.png" alt=""></a>
+           <a href="https://www.twitch.tv/"><img src="../assets/images/twitch_PNG6.png" id="twitchImage"alt=""></a> 
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="leftFooter">
+            <p>All Rights Reserved by Frawlsalla © 2021</p> 
+        </div>
+        <div class="rightFooter">
+            <div class="rightFooterTop"><p>Our Social Media</p></div>
+            <div class="rightFooterBottom">
+                <a href="https://www.instagram.com/"> <img src="../assets/images/instagram.png" alt=""></a>
+                <a href="https://www.youtube.com/"> <img src="../assets/images/youtube-logo-png-46016.png" id="youtubeLogo" alt=""></a>
+                <a href="https://twitter.com/"> <img src="../assets/images/twitter-logo-png-5860.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

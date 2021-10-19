@@ -1,0 +1,373 @@
+:root{
+    --active: #FFA24D;
+    --navbar: #A72002;
+    --border: #841801;
+    --title: #CC1C04;
+    --text: #BEB0B0;
+    --link: #ffffff;
+    --black: #000000;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+}
+
+.navbar{
+    width: 100%;
+    height: 63px;
+    background-color: var(--navbar);
+    display: flex;
+    position: relative;
+    z-index: 999999;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--active);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+.navlink{
+    text-decoration: none;
+    color: var(--link);
+    min-width: 172px;
+    font-size: 30px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    /* border: 1px solid #ffffff; */
+}
+
+.navlink:hover, .navlinkMenu:hover{
+    color: var(--active);
+}
+
+.navlinkMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navbar);
+    text-decoration: none;
+    color: var(--link);
+    min-width: 172px;
+    font-size: 30px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    height: 63px;
+    width: 100%;
+    border-bottom: 2px solid var(--border);
+}
+
+.links-mobile{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    transform: translateY(-100%);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img{
+    height: 100%;
+    padding: 10px;
+}
+
+/* Content */
+
+.jumbotron{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url('../assets/images/backgroundImageJumbotronHome.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btnJumbotron{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25vw;
+    padding-bottom: 25vw;
+}
+
+.btnJumbotron button{
+    width: 20vw;
+    height: 5vw;
+    border-radius: 62px;
+    background-image: linear-gradient(#A72002, #410000);
+    color: #FFA24D;
+    cursor: pointer;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: justify;
+    font-size: 24px;
+}
+
+.aboutTop{
+    display: flex;
+    justify-content: space-around;
+    margin: 3vw;
+}
+
+#titleAbout{
+    color: #CC1C04;
+    margin-bottom: 2vw;
+}
+
+.aboutTopRight{
+    width: 35vw;
+    height: 23vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.97)), url('../assets/images/Gaming.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutTopLeft{
+    width: 40vw;
+}
+
+.aboutBottom{
+    display: flex;
+    justify-content: space-around;
+    margin: 3vw;
+}
+
+.aboutBottomLeft{
+    width: 35vw;
+    height: 23vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.97)), url('../assets/images/image2AboutHome.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutBottomRight{
+    width: 40vw;
+}
+
+
+.event{
+    text-align: center;
+    color: #CC1C04;
+}
+
+.event h1{
+    margin-bottom: 3vw;
+}
+
+.slider{
+    display: flex;
+}
+
+#prevBtn, #nextBtn{
+    position: absolute;
+    background-color: black;
+    color: white;
+    opacity: 0.3;
+    width: 3vw;
+    height: 5vw;
+    margin-top: 17.5vw;
+    cursor: pointer;
+} 
+
+#prevBtn{
+    left: 0;
+}
+#nextBtn{
+    right: 0;
+}
+
+.sliderContent{
+    width: 100%;
+    height: 40vw;
+   
+}
+
+.sliderContent img{
+    display: none;
+    width: 100%;
+    height: 40vw;
+}
+
+img.active{
+    display: block;
+}
+
+.community{
+    text-align: center;
+    color: #CC1C04;
+    margin-block: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.communityCard{
+    margin-top: 2vw;
+    display: flex;
+    margin-bottom: 5vw;
+}
+
+.communityCard img{
+    width: 6vw;
+    height: 6vw;
+    margin-inline: 3vw;
+    border-radius: 50%;
+}
+
+#twitchImage{
+    width: 10vw;
+}
+/* footer */
+.footer{
+    background-color: #A72002;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 3vw;
+    color: wheat;
+}
+
+.rightFooterTop{
+    display: flex;
+    justify-content: center;
+}
+
+.rightFooterBottom{
+    display: flex;
+    
+}
+
+.rightFooterBottom img{
+    width: 2vw;
+    height: 2vw;
+    margin-inline: 1vw;
+}
+
+#youtubeLogo{
+    width: 4vw;
+    height: 3vw;
+    margin-top: -0.5vw;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .hamburger{
+        display: inline-block;
+        margin-right: 1vw;
+    }
+
+    .links{
+        display: none;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+    }
+    #titleAbout{
+        margin-bottom: 2vw;
+    }
+    .aboutTop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3vw;
+    }
+    .aboutTopLeft{
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+   
+    .aboutTopRight{
+        width: 70vw;
+        height: 45vw;
+    }
+
+    .aboutBottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3vw;
+    }
+    .aboutBottomLeft{
+        width: 70vw;
+        height: 45vw;
+        position: absolute;
+        margin-top: 75vw;
+    }
+   
+    .aboutBottomRight{
+        width: 70vw;
+        margin-bottom: 5vw;
+    }
+
+    .event{
+        margin-top: 47vw;
+    }
+}
